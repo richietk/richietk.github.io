@@ -1,56 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Richárd Takács - Data Science Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #000; /* Assuming a dark theme from the image */
+        color: #fff; /* White text for contrast */
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5em;
+    }
+    .banner {
+        text-align: center;
+        padding: 2em;
+        font-size: 2em;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+    .profile img {
+        border-radius: 50%;
+        width: 150px; /* Adjust as needed */
+        margin-bottom: 1em;
+    }
+    .skills {
+        text-align: center;
+    }
+    .skills li {
+        list-style: none; /* Removes bullet points */
+    }
+    /* Add more styling as needed */
+</style>
 </head>
 <body>
-    <header>
-        <div class="container"> 
-            <h1>Richárd Takács</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <nav class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#cv">CV</a>
+        <a href="#projects">Projects</a>
+        <!-- Add other links as needed -->
+    </nav>
+    <header class="banner">
+        MAKE THE DATA SHINE!
     </header>
-
-    <main>
-        <section id="about"> 
-            <div class="container"> 
-                <div class="profile-area">
-                    <img src="https://i.imgur.com/3g07b0P.jpg" alt="Profile Picture" class="profile-pic"> 
-                    <h2>About Me</h2>
-                    <p>Highly motivated... (Add your 'About Me' text here)</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills"> 
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill">Python</div>
-                    <div class="skill">R</div>
-                    <div class="skill">Excel</div> 
-                    <div class="skill">Machine Learning</div> 
-                    <div class="skill">Data Visualization</div>
-                    </div>
-            </div>
-        </section>
-
-        </main>
-
-    <footer>
-        <p>&copy; 2024 Richárd Takács</p>
-    </footer>
-
+    <section class="profile">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h1>HI THERE 👋</h1>
+        <p>I AM A DATA SCIENTIST WHO:</p>
+        <ul class="skills">
+            <li>Loves to solve complex problems in diverse domains</li>
+            <li>Is currently working in the field of Climate Change</li>
+            <li>Handled challenging tasks in Bioinformatics & Telecommunications</li>
+            <li>Plays with all kinds of data structures - text, image, graph, numerical etc</li>
+            <li>At the end of the day, aims to make the data shine!</li>
+        </ul>
+    </section>
+    <!-- Add more sections as needed -->
 </body>
 </html>
